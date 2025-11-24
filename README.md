@@ -20,9 +20,9 @@ Push Docker Image ➝ DockerHub
 ├── pom.xml
 └── Dockerfile
 
-=================================================
+====================
 JENKINS-Installation:
-=================================================
+===================
 ✅ 1. Launch Ubuntu EC2 Instance
 1. Login to AWS Console → EC2 → Launch Instance
 2. Choose Ubuntu Server 22.04 LTS (recommended)
@@ -129,9 +129,9 @@ source /etc/profile
 Restart Jenkins:
 sudo systemctl restart jenkins
 
-============================================
+==========
 GITHUB :
-============================================
+==========
 🔑 Add GitHub Credentials in Jenkins (Required for Code Checkout)
 
 To allow Jenkins to fetch code from your GitHub repository, follow these steps:
@@ -154,9 +154,9 @@ ID: github-cred
 Description: GitHub credentials for Jenkins SCM
 Click Create
 
-===========================================
+================================
 DOCKER INSTALL AND CONFIG IN JENKINS:
-===========================================
+================================
 🚀 PART 1 — Install Docker on Ubuntu EC2 Instance
 
 Step 1: Update packages
@@ -242,9 +242,9 @@ ID: dockerhub-cred (recommended)
 Description: Jenkins Docker Hub Token
 Click Save
 
-=================================================================
+================
 NEXUS ARTIFACTORY 
-=================================================================
+================
 NEXUS INSTALLATION:
 -------------------
 Step 1: Update and Upgrade Packages
@@ -464,9 +464,9 @@ Ensure that the <id> value used in the pom.xml distributionManagement section ex
 as Maven relies on this match to apply the correct credentials during artifact deployment.
 
 
-=====================================================
+===========
 SONARQUBE:
-=====================================================
+===========
 SONARQUBE INSTALLATION:
 ------------------------------------------------------
 Step 1: Update and upgrade server packages
@@ -545,9 +545,9 @@ Go to:
 My Account → Security → Generate Token → Name: sonar-token
 Copy the token.
 
------------------------------------------------------------
+------------------------
 SONARQUBE CONFIGURATION:
------------------------------------------------------------
+------------------------
 PART 1 — Add SonarQube Server in Jenkins
 
 Step 1: Login to Jenkins
@@ -625,6 +625,8 @@ Ensure the following ports are open on your server so all CI/CD tools can commun
 ========================================
 🧩 Jenkins Pipeline Script (Jenkinsfile)
 ========================================
+
+
 
 pipeline {
     agent any
